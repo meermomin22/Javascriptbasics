@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr1 = ["Momin", "Shahzaib", "Bilal", 1,4,67,4,23]
+    let arr2 = ["Muneer", "Shafat", "Bashir", 2,41,627,446,27,3]
+    let str1 = arr1.toString()
+    let padding1 = str1.padEnd(str1.length + 10, 0)
+    let str2 = arr2.toString()
+    let padding2 = str2.padStart(str2.length + 4, 7)
+    let string = padding2.concat(" " + padding1)  
+    let substring = string.substring(2, 15)
+    for(i = 0; i < string.length; i++){
+        let newstring = "" 
+        newstring = string.replace("string[4*i]", "")
+        
+        console.log(newstring)
+    }
+
+    console.log(substring)
+    let array = string.split()
+    console.log(array)
+    
+    
+   
+</script>
+<body>
+    
+</body>
+</html>

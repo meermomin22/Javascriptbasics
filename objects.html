@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    //singleton
+
+    //object literals
+    //object.create
+    const JsUser = {
+        name: "Momin",
+        "full name": "Momin Nabi Mir",
+        age: "24",
+        location: "Kashmir",
+        email: "Mirmominnabi@gmail.com",
+        qualification: "BSc",
+        lastDaysAttempted: ["Monday", "Tuesday"]
+    }
+
+    //Access methods
+    console.log(JsUser.email)
+    console.log(JsUser["email"])
+    //string keys will never be accessed through dot(.) method
+
+    // i.e., console.log(JsUser.full name) will not be accessed. It will be accessed only through square notation
+    // i.e., through this method     console.log(JsUser["full name"])
+
+    //To change key values
+
+    JsUser.emil = "meermomin422@gmail.com"
+
+    //To lock key value
+
+    // object.freeze(JsUser)
+
+    //Functions in object
+
+    JsUser.greetings = function(){
+        console.log("Hello js user");
+    }
+    console.log(JsUser.greetings())
+    console.log(JsUser.greetings);
+
+    JsUser.greetingsTwo = function(){
+        console.log(`Hello js user, ${this.name}`);
+        
+    }
+    console.log(JsUser.greetings());
+    console.log(JsUser.greetingsTwo());
+
+    JsUser.emailtwo = function(){
+        console.log(`Hello user my email is, ${this.email}`);
+        
+    } 
+    console.log(JsUser.emailtwo())
+
+
+
+
+
+
+
+
+
+
+
+    let customer = {
+        name: "Momin",
+        age: 24,
+        occupation: "student",
+        address: "Ashpora",
+        qualification: "BSc",
+        gender: "Male"
+    }
+    let data = Object.keys(customer);
+    console.log(data);
+    for (let reality of data) {
+        console.log(reality);
+    }
+    let value = Object.values(customer);
+    console.log(value);
+    for (let result of value) {
+        console.log(result);
+    }
+
+    let house = {
+        rooms: "one",
+        doors: "Two",
+        windows: "Three",
+        bathrooms: 1,
+        bedrooms: 3,
+        kitchens: 1,
+        battries: 3,
+        inverters: 1,
+        lamps: 11,
+        solars: 10
+    }
+    let home = Object.values(house);
+    document.write(home + "<br>");
+    for (let myHome of home) {
+        if (myHome != 13) {
+
+            document.write(myHome + "<br>")
+
+        }
+    }
+
+
+    let shelter = Object.keys(house);
+    document.write(shelter + "<br>");
+    for (let myShelter of shelter) {
+        document.write(myShelter + "<br>");
+    }
+
+    let hii = Object.entries(house);
+    console.log(hii);
+
+    let Meer = {
+        momin: 12,
+        shahzaib: 13,
+        Adil: 23,
+        Tajamul: "My love"
+    }
+    let simran = JSON.stringify(Meer);
+    console.log(simran);
+    let fazil = JSON.parse(simran);
+    console.log(fazil);
+
+
+    const obj1= { 1: "a", 2: "b"}
+    const obj2= { 3: "a", 4: "b"}
+    const obj3= { 5: "a", 6: "b"}
+    const obj4= { 7: "a", 8: "b"}
+
+    const obj5= {...obj1, ...obj2, ...obj3, ...obj4};
+    console.log(obj5)
+    
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    for (let i = 1; i <= 10; i++) {
+        if (10 % i == 0) {
+            // console.log(i);
+        }
+    }
+    let f = 1;
+    for (let i = 4; i >= 1; i--)
+        f = f * i
+    // } console.log(f)
+
+
+    for (i = 25; i > 1; i = i - 1) {
+        if (i * i == 25) {
+            // console.log(i)
+        }
+    }
+    let s = 1;
+    for (let c = 1; c < 6; c = c + s) {
+        s = s + c
+        // console.log(s)
+    }
+
+    let mon = 0
+    let tue = 1
+    for (let i = 1; i < 20; i++) {
+        let newT = mon + tue;
+        mon = tue
+        tue = newT
+        // console.log(newT)
+    }
+    let x = 5;
+    let y = 10;
+    var m = x
+    x = y
+    y = m
+
+    // console.log(x, y)
+
+    var t = "My name is Mominn"
+    let z = t.length
+    let newStr = ""
+    let g = z / 2
+    g = Math.floor(g)
+    for (i = z - 1; i >= g; i--) {
+
+        newStr = newStr + t[i]
+    }
+    //  console.log(newStr)
+
+
+    let d = "i am 1 and 2 of 345 so 678 that is 890"
+    let o = "1234567890"
+    let nomm = ""
+
+    for (let i = 0; i < d.length; i++) {
+
+        for (var j = 0; j < o.length; j++) {
+            if (d[i] == o[j]) {
+                v = d[i]
+                nomm = "nomm" + "v "
+                console.log(nomm);
+            }
+        }
+    }
+
+    let G = "80"
+    for (let v = 1; v <= 20; v++) {
+        let j = G * v
+        let P = (j)
+        console.log(j);
+    }
+
+    // let M= 800;
+    // let N= 70;
+    // let T= M/N
+    // let B= M % N
+    let str = "100+100+100+100+100"
+    let L = str.length
+    let own = 0
+    let tmp = ""
+    for (x = 0; x <= L; x++) {
+        if (str[x] == "+") {
+            own = own + parseInt(tmp)
+            tmp = ""
+            console.log("own", own)
+        } else {
+            tmp = tmp + str[x]
+        }
+    }
+    console.log("Value of own is", own)
+
+
+    // if (B == 0) {
+    // document.write("The value of T is ", T)
+    // } else {
+    // document.write("The value of B is ", B)   
+    // }
+
+    let X = "100"
+    for (i = 1; i <= X; i++) {
+        if (i % 2 == 0) {
+            console.log(i)
+        }
+    }
+
+    let C = 100
+    for (i = 1; i <= C; i++) {
+        if (i % 2 == 1) {
+            console.log(i)
+        }
+    }
+
+    let Kilometer = "299"
+    let Meters = 1000
+    let M = Kilometer * Meters
+    console.log("The total length in meters", M)
+
+    let a= 300;
+    let b= 400;
+    let c= 500;
+    let sum= (a+b+c)/2;
+    let area= Math.sqrt(sum*((sum-a)*(sum-b)*(sum-c)));
+    console.log(area);
+
+    let side= 12;
+    let square= side*side;
+    console.log(square);
+
+    let diameter=300;
+    let radius= diameter/2;
+    let formula= radius*radius
+    let areaa= (22/7)*(formula);
+    console.log(areaa);
+
+    let T= 12;
+    let u= 13;
+    if(T>u){
+        document.write("t is greater than u")
+    } else{
+        document.write("u is greater or t is smaller than you")
+    }
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    //Ascending or descending order of an array
+    let a = [11, 23, 45, 50, 455, 44]
+    for (let x = 0; x < a.length; x++) {
+        for (let y = x + 1; y < a.length; y++) {
+            if (a[x] < a[y]) {
+
+                let intr = a[y]
+                a[y] = a[x]
+                a[x] = intr
+            }
+        }
+
+    }
+    console.log(a)
+
+
+    //which number is repeated
+    let b = [11, 23, 45, 23, 23, 50, 45, 455, 44, 11]
+    for (let x = 0; x < b.length; x++) {
+        for (let y = x + 1; y < b.length; y++) {
+            if (b[x] == b[y]) {
+
+                console.log(b[x])
+            }
+        }
+    }
+
+
+    //reverse the numbers in each array
+    let array1 = [1, 2, 3, 4, 5, 6, 7, 8];
+    let array2 = [9, 10, 11, 12, 13, 14, 15, 16];
+    for (let x = 0; x < array1.length; x++) {
+
+        let arr = array1[x]
+        array1[x] = array2[x];
+        array2[x] = arr;
+
+    }
+
+    console.log("Array 1 is" + " " + array1, "Array 2 is" + " " + array2)
+
+
+    //to interchange the elemets from top to bottom
+
+    let array3 = [1, 2, 3, 4, 5, 6, 7, 8];
+    let array4 = [9, 10, 11, 12, 13, 14, 15, 16];
+    for (let x = 0; x < array3.length; x++) {
+        for (let y = 0; y < array4.length; y++) {
+            let newArray = array3[x]
+            array3[x] = array4[y]
+            array4[y] = newArray
+
+        }
+    } console.log(array3, array4)
+
+
+    //Squaring, cubing elements of an array
+    let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+    for (let x = 0; x < myArray.length; x++) {
+        let array = myArray[x]
+        myArray[x] = myArray[x] * myArray[x] * myArray[x]
+    }
+    console.log(myArray)
+
+
+
+    //Square roots of elements
+
+    let alternative = [1, 169, 196, 900, 8100, 10000, 160000, 90000, 40000, 4, 9, 16, 25, 36, 49, 64, 81, 400];
+    for (let i = 0; i < alternative.length; i++) {
+        for (let j = 1; j < 1000; j++) {
+
+
+            if (j * j == alternative[i]) {
+                console.log(j)
+            }
+        }
+    }
+
+
+    //Sort in ascending or descending order
+    let ourArray = [111, 23, 55, 60, 33, 6, 33, 6, 68, 89, 556, 33, 44];
+    for (let i = 0; i < ourArray.length; i++) {
+        for (let j = 0; j < ourArray.length; j++) {
+            if (ourArray[i] > ourArray[j]) {
+                let number = ourArray[i]
+                ourArray[i] = ourArray[j]
+                ourArray[j] = number
+
+            }
+        }
+
+    } console.log(ourArray);
+
+    //Concatinate two arrays
+    let arrayA = [1, 2, 3, 4, 5, "Bilal", 7, 8, 9];
+    let arrayB = [10, 11, 12, 13, 14, "Momin", 16, 17, 18];
+    for (let y = 0; y < arrayB.length; y++) {
+        arrayA.push(arrayB[y])
+    }
+    console.log("arrayA is this", arrayA)
+
+
+
+    let name = ["My name is Meer Momin and I am from"]
+
+    name.push("Ashpora Qaziabad kashmir Pakistan")
+    console.log(name)
+
+    //Subject problems
+    var student = {
+        name: "David Rayy",
+        sclass: "VI",
+        rollno: 12
+    };
+    console.log(student);
+    delete (student.rollno);
+    console.log(student)
+
+    //Add elements at starting of an array
+
+    let arr = [3, 4, 5]
+    for (let i = arr.length; i >= 0; i--) {
+        arr[i] = arr[i - 1]
+
+    }
+    arr[0] = 2
+    console.log(arr)
+
+
+    //Add elements at starting of an array
+    let arra = [3, 4, 5]
+    for (let i = arra.length + 1; i >= 0; i--) {
+        arra[i] = arra[i - 2]
+
+    }
+    arra[0] = 1
+    arra[1] = 2
+    console.log(arra)
+
+
+    //Uppercase and lowercase problem
+
+    let Fruits = ["APPLE", "BANANA", "MANGO", "ORANGE"]
+    for (i = 0; i < Fruits.length; i++) {
+        Fruits[i] = Fruits[i].toLowerCase()
+    }
+    console.log(Fruits)
+
+    //Existence of an element in an array
+
+    let include = [1, 2, 3, 4, "Momin", 6, 7, 8, 9]
+    let result = include.includes(3)
+    console.log(result)
+
+    let include1 = [1, 2, 4, "Momin", 6, 7, 8, 9]
+    let result1 = include1.includes(3 * 3)
+    console.log(result1)
+
+
+
+    let include2 = [2, 3, 4, "Momin", 6, 7, 8, 9]
+    let result2 = include2.includes(3 / 3)
+    console.log(result2)
+
+
+
+
+    let include3 = [1, 2, 3, 4, "Momin", 6, 7, 8, 9, 75]
+    let result3 = include3.includes(100 - 25)
+    console.log(result3)
+
+
+
+
+    let include4 = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10, 1000]
+    let result4 = include4.includes(25 * 40);
+    console.log(result4)
+
+
+    //reverse
+    let he = ["Zebra", "Momin", "Shahzaib", "aaabbc", "aabbc"];
+    he.reverse();
+    console.log(he)
+    he.sort();
+    console.log(he);
+    console.log(he.at(1));
+
+
+
+
+    const objt = {
+        0: "apple",
+        1: "banana",
+        2: "cherry",
+        length: 3
+    }
+    const arro = Array.from(objt);
+    console.log(arro);
+
+
+
+
+    let names = ["Momin", "Shahzaib"];
+    let midNames = ["Nabi", "Ahmad", "Amin"]
+    let lastNames = ["Mir", "Dar", "Sheikh", "Geelani"]
+    let hName = ["Mohammad", "Hazim", "Meer"]
+    names.unshift("Asma", "Aakash", "Muzamil")
+    console.log(names)
+    let fullName = names.concat(lastNames);
+    console.log(fullName)
+    //Another method for concatinating
+    let allName = [...names,...lastNames, ...midNames, ...hName];
+    console.log(allName)
+
+
+
+
+    let me = ["I love my Kashmir"]
+    let she = ["Hey umer"]
+    let message = she.concat(me);
+    console.log(message)
+    me.unshift("Hey Momin");
+    console.log(me)
+
+
+
+    let mixedArray = [1,2,[3,56,[1,2,3,4,5,6,7,8],4],5,[6,7,[8,9,[23,45],3],56]];
+    let singleArray = mixedArray.flat(infinity);
+    console.log(singleArray)
+    console.log(Array.isArray("mixedarray"))
+    console.log(Array.from("momin"))
+
+
+
+    let scr1 = 100
+    let scr2 = 200
+    let scr3 = 300
+    let scr4 = 400
+    let scr5 = 500
+    console.log(Array.of(scr1,scr2, scr3, scr4, scr5))
+
+
+
+    let unknown = [1,2,3,4,5,6,7,8,9,0]
+    let splice = unknown.splice(4,3);    // Used to delete some eltemts of an array by using index and number of elements
+    let slice = unknown.slice(0,3)   //Used to return a part of an array by using limits
+    console.log(splice)
+    console.log(slice)
+    // console.log(unknown)
+
+
+
+
+
+
+
+</script>
+<body>
+    <a href="/video.html">See result and download form</a>
+</body>
+</html>

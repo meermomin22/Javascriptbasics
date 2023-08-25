@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>String Methods</h3>
+    <p>There are many string methods which are as under</p>
+
+</body>
+<script>
+    let string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let part0 = string.slice(12, 26)
+    let part1 = string.slice(20)
+    let part2 = string.substring(1, 25)
+    let part3 = string.substring(-11, 13)
+    let part4 = string.substring(12)
+    let part5 = string.substr(12, 6)
+    let part6 = string.substr(12)
+    let part7 = string.substr(-5)
+    // console.log(part0)
+    // console.log(part1)
+    // console.log(part2)
+    // console.log(part3)
+    // console.log(part4)
+    // console.log(part5)
+    // console.log(part6)
+    // console.log(part7)
+    
+
+   
+    let intro = "I am Meer Momin from Handwara Momin";
+     //Replace method
+    let newintro = intro.replace("Handwara", "Anantnag")
+    let myintro = intro.replace("I", "A")
+    //Replaces only first match
+    let myself = intro.replace("Momin", "Shahzaib")
+    //To replace case sensitive
+    let case1 = intro.replace(/MOMIN/i, "Shahzaib")
+    //To replace all same word
+    let allReplace = intro.replace(/Momin/g, "Shahzaib")
+    // console.log(newintro)
+    // console.log(myintro)
+    // console.log(myself)
+    // console.log(case1)
+    // console.log(allReplace)
+
+
+    let replaceall = "I am Meer Momin from Ashpora. I am reading in GDC Handwara. I Momin am naturally smart. Your brother is momin and you are so smart"
+    let uppercase = replaceall.toUpperCase()
+    
+    replaceall  = replaceall.replaceAll(/Momin/g, "Shahzaib")
+    replaceall = replaceall.replaceAll(/I/g, "He")
+    let lowercase = replaceall.toLowerCase()
+    // console.log(lowercase)
+    // console.log(replaceall)
+    // console.log(uppercase)
+    
+
+    //Trim
+    //It removes white spaces at both ends
+    //TrimStart removes white space at start end
+    //TrimEnd removes white space at last end
+
+    let x = "      i am meer    "
+    let trim1 = x.trim() //  Trim on both sides  
+    let trim2 = x.trimEnd()   // Trim on last end
+    let trim3 = x.trimStart() //  Trim at first end
+    // console.log(trim1)
+    // console.log(trim2)
+    // console.log(trim3)
+
+    //Padding in javascript
+    //First number should be greater than the length of string
+    
+    let y = "4"
+    let z= y.padStart(5, 1)  //It adds number 1 at start until the string achives the length i.e., 5-1 = 4. We can change both of them. Example
+    let a = y.padStart(8, 0)
+
+    let s = y.padEnd(4,0)  //It adds number 1 at End until the string achives the length i.e., 3. But actually 4 is at fourth place from last end. We can change both of them. Example
+    let d = y.padEnd(5,0)
+
+    // console.log(z)
+    // console.log(a)
+    // console.log(s)
+    // console.log(d)
+
+
+    //If variable is not string but is simplly a variable then we have to first convert it into string.
+
+    let v = 52;
+    let u = v.toString()
+    let i = u.padEnd(4,8)
+    let m = u.padStart(4, 9)
+    // console.log(u)
+    // console.log(i)
+    // console.log(m)
+
+     //Converting array into string then applying this padding rule
+      //Remember that we can only numbers at start end or last end not alphabets or anything else
+    let array = ["Momin","Meer", "Shahzaib"]
+    let array1 = array.toString()
+    let myArray = array1.padStart(30, 9)
+    // console.log(myArray)
+    
+
+    //Extracting String Character
+
+    let string1 = "Momin is a good boy"
+    let char = string1.charAt(0)  //Zero is the postion of character which we want to return
+    console.log(char)
+
+
+    //If it is an array, then we have to  first convert it into string by this method
+    let string2 = ["Momin", "Shahzaib", "Tajamul"]
+    let str = string2.toString()
+    let str1 = str.charAt(8)
+    
+    console.log(str)
+    console.log(str1)
+
+
+
+    let strng = "Dear Momin shahzaib Bial"
+    let lcase = strng.toUpperCase()
+    let index = strng.indexOf("Momin")
+    console.log(index)
+    console.log("Hey my name is", lcase)
+   let rplace = strng.replaceAll(" ", "_")
+   console.log(rplace)
+     let theek = strng.replace("<|___|>", "Momin")
+    theek = strng.replace("Bial", "Bilal")
+    console.log(theek)
+    
+   
+
+   
+
+
+
+
+</script>
+
+
+</html>

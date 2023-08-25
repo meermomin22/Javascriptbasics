@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    function Momin() {
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 5; j >= i; j--) {
+                document.write(j + "  ")
+            }
+            document.write("<br>")
+        }
+
+    }
+    function Meer() {
+        for (var k = 5; k >= 1; k--) {
+            for (var l = 1; l <= k; l++) {
+                document.write(l + "+" + k + "=" + "_____")
+            }
+            document.write("<br>")
+        }
+    }
+    function solid() {
+        var x = ("I am Meer Momin from Ashpora");
+        var y = ("I am from Qaziabad Kashmir");
+        let z = x + "___" + y;
+        document.write(z + "<br>")
+    }
+    function Mir() {
+        var r = ("I am little muslim");
+        let s = r.length;
+        for (var m = 1; m <= 1; m++) {
+            document.write(r[3] + "<br>");
+        }
+    }
+    function Dar() {
+        for (var q = 1; q <= 2; q++) {
+
+            for (var w = 1; w <= 2; w++) {
+                document.write(q + "*" + w + "=" + "________" + " ")
+            }
+            document.write("<br>")
+        }
+    }
+    function sum(a, b) {
+        document.write("Hello" + "  " + a + " " + b + "<br>");
+    }
+    sum("Meer", "Momin");
+    sum("Mir", "Shahzaib");
+
+    //function with return value
+
+    function rtn(hii = "fname", jii = "lname") {
+        var a = hii + "_____" + jii
+        return a;
+    }
+    var fn = rtn("Meer", "Momin")
+    document.write(fn + "<br>");
+
+    function smart() {
+        var v = 1
+        do {
+            document.write("I am fine" + "<br>")
+            v = v + 1
+        } while (v <= 15);
+    }
+
+    function table() {
+        for (var z = 1; z <= 10; z++) {
+            for (var y = 1; y <= 20; y++) {
+                document.write(z + "*" + y + "=" + z * y + " " + "<br>")
+            }
+            document.write("<br>")
+        }
+    }
+    function cat() {
+        var z = ("I love my Kashmir");
+        var n = (" & I have so many questions to ask you");
+        var m = z + " " + n
+        for (var s = 1; s <= 10; s++) {
+            document.write(m + "<br>")
+        }
+    } 
+    function prt(){
+     prompt("You have exhausted your daily limit")
+    }
+
+
+    whil(); cat(); table(); Mir(); Dar(); Momin(); Meer(); solid(); smart(); table(); prt();
+
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

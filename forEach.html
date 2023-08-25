@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    let fruits = []
+    fruits["name"] = "Banana"
+    fruits["price"] = 10
+    fruits["weight"] = 234
+    fruits["color"] = "Yellow"
+
+    //  fruits["name"] = "Mango"
+
+    Object.entries(fruits).forEach(function (value, key) {
+
+        console.log("Index" + ":" + key + " " + "value" + ":" + value)
+        console.log(value[0])
+
+    })
+
+
+    let anArray = ["Momin", "Suhail", "Danish", 23, "Shahzaib"];
+    anArray.forEach(function (value, index) {
+        console.log(index, value)
+
+    })
+
+    // let arr = [100, 10, 20, 30]
+    // let total = arr.reduce(function (istElemet, current) { //istElemet 0 , 3 , 
+    //     if (istElement > 20 && current > 20) {
+    //         // console.log(istElemet,current)
+    //         return istElemet + current //istElemet = istElemet +current
+    //     }
+    //     console.log(total)
+    // }) 
+
+    let hii = [1, 3, 10, 10, 20]
+    let result = hii.reduce(function (first, current) {
+        if (current < 10) {
+            //    result = first + current
+            return first * current
+
+        } else {
+            return first
+        }
+
+
+    }, 1)
+    console.log(result)
+
+
+    const ages = [3, 30, 18, 40, 12, 14, 20, 50];
+    const resultt = ages.filter(function (ele) {
+        return ele <= 18;
+    })
+
+    // function greater(number) {
+
+    let newResult = resultt.reduce(function (first, current) {
+        return first + current
+    })
+
+    console.log(resultt)
+    console.log(newResult)
+
+
+
+
+
+    const digits = [3, 30, 18, 40, 12, 14, 20, 50];
+    const newDigits = digits.filter(smaller);
+
+    function smaller(number) {
+        return number <= 18;
+    }
+    console.log(newDigits)
+
+
+
+
+
+    const digit = [3, 30, 18, 40, 12, 14, 11, 20, 50];
+
+    const newDigit = digit.filter(function (greater) {
+        if (greater > 20) {
+            return greater
+        }
+
+    })
+    console.log(newDigit)
+
+
+    const array = ["Momin", "Shahzaib", "salman", "Abu Baker", "Bilal"]
+    let newName = array.map(bigger);
+
+    function bigger(value) {
+
+        if (value.length == 5) {
+            // let last = value[value.length - 1]
+            // last = last.toUpperCase()
+
+            let cnvrt = Array.from(value)
+            // ["M","o","m", "i", "n"]
+            let capital = cnvrt[4].toUpperCase()
+            cnvrt[4] = capital
+            //  cnvrt = cnvrt.toString()
+            //  cnvrt= cnvrt.replaceAll("," , "")
+            // console.log("value", cnvrt)
+            // return cnvrt
+            let newArray = cnvrt.join("")
+            return newArray
+
+
+        }
+        return value
+
+    }
+    console.log("Names are", newName)
+
+
+
+
+
+    let array1 = ["Momin", "Shahzaib", "Salman", "Abu Baker", "Biiilal"]
+    let newName1 = array.map(names1);
+
+    function names1(value, index) {
+
+        if (index <= 1) {
+            value = value.toUpperCase()
+        }
+        value = value.replaceAll(" ", "-")
+        value = value.replaceAll("iii", "i")
+        return value
+
+
+    }
+    console.log("Names are", newName1)
+
+
+
+    let myNames = ["Momin", "Shahzaib", "Salman", "Abu Baker", "Biiilal"]
+    let sadde = myNames.map(sad11);
+
+    function sad11(Itizme) {
+        Itizme = Array.from(Itizme)
+        Itizme = Itizme.reverse()
+        Itizme = Itizme.join()
+        Itizme = Itizme.replaceAll(",", "")
+        Itizme = Itizme.replaceAll("iii", "i")
+        return Itizme
+    }
+    console.log("Names are", sadde)
+
+
+
+
+
+    let firstNames = ["Hazrat Bilal", "Hazrat Umer", "Hazrat Usman", " Hazrat Ali", "Momin"]
+    let lastNames = ["Habshi", "Bin Khataab", "Gani", "Murtaza", "Nabi"]
+    let Happy = firstNames.map(Happy1)
+    function Happy1(value, index) {
+        value = value + " " + lastNames[index]
+        return value
+
+    }
+    console.log(Happy)
+
+
+
+    const person = [{
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+    }]
+
+    let fullName = person.map(Name)
+    function Name(value) {
+        value = person.key
+        return value
+    }
+    console.log(fullName)
+
+
+
+    let array3= ["Momin", "Shahzaib", "Salman", "Abu Baker", "Bilal", "Mushtaq", "Qadir", "Shamsudin", "Mehraj"]
+    let sadd = array3.map(sad1);
+
+    function sad1(Valuee) {
+        Valuee = Array.from(Valuee)
+        Valuee = Valuee.reverse()
+        Valuee = Valuee.join()
+        Valuee = Valuee.replaceAll("a", "_")
+        Valuee = Valuee.replaceAll("e", "_")
+        Valuee = Valuee.replaceAll("i", "_")
+        Valuee = Valuee.replaceAll("o", "_")
+        Valuee = Valuee.replaceAll("u", "_")
+        Valuee = Valuee.replaceAll(",", "")
+
+        return Valuee
+    }
+    console.log("Names are", sadd)
+
+
+     //Remove an element between an array
+
+    let array4 = ["Momin", "Shahzaib", "Salman", "Abu Baker", "Bilal", "Mushtaq", "Qadir", "Shamsudin", "Mehraj"]
+      let remove = array4.splice(1,2, "Mushtaq Ahmad")  
+      console.log(array4)
+
+
+
+      let radius = [7]
+     
+      let area = radius.map(circle)
+      function circle(radii){
+        radii = Math.PI * radius*radius
+           return radii
+
+      }
+      console.log(area)
+
+
+      
+    let biodata = [
+        { id: 123, name: "Momin", subject: "Chemistry" },
+        { id: 133, name: "Shahzaib", subject: "Math" },
+        { id: 143, name: "Mudasir", subject: "Chemistry" },
+        { id: 153, name: "Momin", subject: "physics" },
+        { id: 123, name: "Mudasir", subject: "Botany" },
+        { id: "Ashpora", name: "Shahzaib", subject: "Chemistry", address: "Ashpora" }
+    ];
+
+    let check = biodata.filter(function (member) {
+
+        return member.name == "Momin"
+
+    })
+    console.log(check)
+
+
+
+    let names = ["America", "Pakistan", "China", "Saudi Arabia", "Malaysia", "Kashmir", "Iran", "Turkey", "Afghanistan", "Bangladesh"]
+
+
+
+    // let newcheck = biodata.reduce(function(member){
+    //     return
+    // })
+    // console.log(newcheck)
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

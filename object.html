@@ -1,0 +1,39 @@
+<script>
+    let alien = {
+        name: 'Momin',
+        tech: 'js',
+        age: '23'
+    }
+    console.log(alien.name, alien.age);
+
+   
+        let newYear = {
+            name: '2023',
+            months: '12',
+            weeks: '52',
+            holidays: '54'
+        }
+        console.log("Happy new year", newYear.name)
+    
+
+    function year1(welcome) {
+        let newYear = {
+            name: '2024',
+            months: '12',
+            weeks: '52',
+            holidays: '54'
+        }
+        console.log(this.name, newYear)
+    } this.name = 'welcomeee'
+
+    function jobForm() {
+        let form = {
+            name: 'Sub Inspector',
+            salary: '50000',
+            working_Hours: '4 hours per day'
+        }
+        console.log(form)
+    }
+
+    year(); year1(); year1(); jobForm();
+</script>

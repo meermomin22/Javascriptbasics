@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(169, 236, 169);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        .container p{
+            color: red;
+        
+        }
+        .container a{
+           margin-right: 500px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: green;
+            color: black;
+            background-color: white;
+        }
+        .btn:hover{
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .btn{
+            font-family: bold;
+            background-color: gray;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 10px;
+            border-radius: 4px;
+
+        }
+        .sun{
+            padding: center;
+            margin-left: 50px;
+            color: black;
+            background-color: grey;
+            border: 2px dashed red;
+        }
+        .sun:hover{
+            color: white;
+            background-color: black;
+            border: 3px solid green;
+            border-radius: 4px;
+        }
+        .container .butn{
+            display: flex;
+            margin: center;
+          justify-content: center;
+          
+
+        }
+        text{
+            align-content: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus magni fugiat aliquam dolore asperiores rem error illum fuga. Quisquam consequuntur deserunt officiis nobis commodi earum voluptatum, repudiandae esse perferendis eveniet!</p>
+        <a href="" class="btn">Read more</a>
+        <div class="butn">
+
+            <button class="sun">Rate us</button>
+            <button class="sun">Know more</button>
+            <button class="sun">Contact us</button>
+        </div>
+    </div>
+    
+</body>
+</html>
