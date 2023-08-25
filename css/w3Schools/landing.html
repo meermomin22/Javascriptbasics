@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let sentence = "mhis is a great icecreAm is of Isobars is islAnd"
+    let index = sentence.indexOf(/is/gi)
+    let replace = sentence.replace("m", "T")
+    let match = sentence.match(/a/)
+    let includes = sentence.includes("great")
+    let matchall = sentence.matchAll("is")
+    let start = sentence.startsWith("mhis")
+    let end = sentence.endsWith("islAnd")
+    console.log(index)
+    console.log(match)
+    console.log(replace)
+    console.log(matchall)
+    console.log(includes)
+    console.log(start)
+    console.log(end)
+
+
+     //With backticks we can write in multiple lines and can include double or single quotes inside line
+
+
+    let string = `It is popularly known as "Kashmir"`
+    console.log(string)
+
+    let lines = `A quick
+    brown fox
+    jumps over 
+    the lazy
+    dog`
+    let insert = lines.replace("over", "below")
+    console.log(insert)
+     
+    //variables in string
+
+    let fname = "Meer";
+    let lname = "Momin";
+    let fullname = `Welcome to ${fname} ${lname}`
+    console.log(fullname)
+
+    //to add 0 multiple times
+    let decimal = 1.5e-6
+    console.log(decimal)
+</script>
+<body>
+    
+</body>
+</html>
